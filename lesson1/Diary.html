@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" type="text/css">
+ <script src="main.js"></script>
   <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
   <title>Diary</title>
 </head>
@@ -22,5 +23,24 @@
     <br>
     <hr>
     </div>
+    <script>
+        var newText='Это наш новый текст, который меняется через функцию JS';
+        function ChangeText() {
+          var oldText=document.getElementById('footerMsg');
+          oldText.textContent=newText;        
+        }
+        /*ChangeText();
+        
+      </script>
+    <button onclick="alert('Текст с помощью JS')">Наша кнопка </button>
+    <button onclick="ChangeText()">Запуск функции смены текста </button>
+    <div id="footerMsg">
+      Вот такой вот текст у нас есть
+    </div>
+
+    
+
+    
+   
 </body>
 </html>
