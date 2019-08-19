@@ -1,0 +1,28 @@
+{
+  "name": "gitproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monstrby/MyRepository.git"
+  },
+  "author": "Vitaly Belous",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monstrby/MyRepository/issues"
+  },
+  "homepage": "https://github.com/monstrby/MyRepository#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "normalize.css.styl": "^4.1.1",
+    "promt": "0.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}
