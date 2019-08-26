@@ -51,5 +51,15 @@ var today = new Date();
 var simleDate = today.toTimeString();
 console.log(simleDate);
 
+function checkResult() {
+var score1 = 20;
+if (score1<50) {
+    console.log('Повторите попытку!');}
+    else 
+    {console.log('Пройдено успешно!');}   
+};
+var ourResult = checkResult();
+console.log(ourResult);
+
 
 
