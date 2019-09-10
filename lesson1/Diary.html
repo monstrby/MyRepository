@@ -4,44 +4,61 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" type="text/css">
- <script src="main.js"></script>
-  <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+  <script src="main.js"></script>
+
   <title>Diary</title>
 </head>
+
 <body>
-    <div class="funny_box">
-    <h1>Дневник партизана</h1>
+  <script>
+  
+    </script>
+  <div class="funny_box">
+    <h1 id="title">Дневник партизана</h1>
     <br>
     <ol>
-        <li><strong>Вторник.</strong> Выбили <a href="https://www.bundestag.de/"target="_blank">немцев</a> с опушки. Засели в доме лесника.</li>
-        <li><strong>Среда.</strong> Мощная контратака немцев вынудила нас оставить занятые ранее позиции.</li>
-        <li><strong>Четверг.</strong> Под покровом ночи смогли снова засесть в доме лесника. Курим «Беломор».</li>
-        <li><strong>Пятница.</strong> Вернулся лесник и всех выгнал.</li>
+      <li id="one" class="grey"><strong>Вторник.</strong> Выбили <a href="https://www.bundestag.de/"
+          target="_blank">немцев</a> с опушки. Засели в доме лесника.</li>
+      <li id="two" class="white"><strong>Среда.</strong> Мощная контратака немцев вынудила нас оставить занятые ранее
+        позиции.</li>
+      <li id="three" class="grey"><strong>Четверг.</strong> Под покровом ночи смогли снова засесть в доме лесника. Курим
+        «Беломор».</li>
+      <li id="four" class="white"><strong>Пятница.</strong> Вернулся лесник и всех выгнал.</li>
     </ol>
     <br>
-    "test": "echo \"Error: no test specified\" && exit 1",
     <p>&copy; бородатый <a href="http://anekdot.ru" target="_blank">анекдот</a></p>
     <br>
     <hr>
-    </div>
-    <script>
-        var newText='Это наш новый текст, который меняется через функцию JS';
-        function ChangeText() {
-          var oldText=document.getElementById('footerMsg');
-          oldText.textContent=newText;        
-        }
-        /*ChangeText();
-        
-      </script>
-    <button onclick="alert('Текст с помощью JS')">Наша кнопка </button>
-    <button onclick="ChangeText()">Запуск функции смены текста </button>
-    <div id="footerMsg">
-      Вот такой вот текст у нас есть
-    </div>
+  </div>
+  <script>
+    var newText = 'Это наш новый текст, который меняется через функцию JS';
+    function ChangeText() {
+      var oldText = document.getElementById('footerMsg');
+      oldText.textContent = newText;
+    }
+    /*ChangeText();*/
+    function ChangeClass() {
+    var elements = document.getElementById('two').firstChild.nextSibling.nodeValue;
+    alert(elements);
+    }
 
-    
+    function ChangeTitle() {
+      var oldTitle = document.getElementById('title');
+      oldTitle.innerHTML = '<h2>Гритусь. Полное собрание сочинений</h2>';
+      
+    }
 
-    
-   
+  </script>
+  <button onclick="ChangeTitle()">Сменить класс </button>
+  <button onclick="ChangeText()">Запуск функции смены текста </button>
+  <div id="footerMsg">
+    Вот такой вот текст у нас есть
+  </div>
+
+
+
+
+
 </body>
+
 </html>

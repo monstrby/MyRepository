@@ -5,3 +5,12 @@
 h1 {
     text-align: center; 
 }
+.grey {
+    background: gray;
+}
+.white {
+    background: white;
+}
+.red {
+    background: red;
+}
